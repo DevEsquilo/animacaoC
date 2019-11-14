@@ -106,8 +106,8 @@ int main(){
         cleardevice(); // limpa a tela
 
         // nao esquecer a ordem, precisa necessariamente ser personagem, dps sombra
-        putimage(100, 100, personagem[i], AND_PUT); // coloca o desenho do personagem na tela
-        putimage(100, 100, sombra[i], OR_PUT); // faz o recorte com a sombra
+        putimage(100, 100, sombra[i], AND_PUT); // faz o recorte com a sombra
+        putimage(100, 100, personagem[i], OR_PUT); // coloca o desenho do personagem na tela
         if(i == 2)i = 0;else i++; // impede que o programa tente ler uma imagem que n existe, "i" deve ser igual o tamanho de frames
 
         setvisualpage(pg); // faz o usuario ver a pagina ja desenhada
